@@ -1,0 +1,35 @@
+@font-face {
+  font-family: iransans;
+  src: url("../src/assets/iranSans/IRANSansWeb\(FaNum\).ttf");
+  font-weight: normal
+}
+@font-face {
+  font-family: iransans;
+  src: url("../src/assets/iranSans/IRANSansWeb\(FaNum\)_Black.ttf");
+  font-weight: 900
+}
+@font-face {
+  font-family: iransans;
+  src: url("../src/assets/iranSans/IRANSansWeb\(FaNum\)_Bold.ttf");
+  font-weight: bold
+}
+@font-face {
+  font-family: iransans;
+  src: url("../src/assets/iranSans/IRANSansWeb\(FaNum\)_Light.ttf");
+  font-weight: 200
+}
+@font-face {
+  font-family: iransans;
+  src: url("../src/assets/iranSans/IRANSansWeb\(FaNum\)_Medium.ttf");
+  font-weight: 500
+}
+@font-face {
+  font-family: iransans;
+  src: url("../src/assets/iranSans/IRANSansWeb\(FaNum\)_UltraLight.ttf");
+  font-weight: 100
+}
+@import "tailwindcss";
+@theme{
+  --font-iransans : iransans;
+  --color-primary : #FCF5ED;
+}
