@@ -30,6 +30,14 @@
 }
 @import "tailwindcss";
 @theme{
-  --font-iransans : iransans;
+  --font-primary : iransans;
   --color-primary : #FCF5ED;
+}
+@layer utilities{
+  .container{
+    @apply max-w-[1400px] m-auto px-5
+  }
+  .trans{
+    @apply transition duration-300 ease-in-out
+  }
 }
