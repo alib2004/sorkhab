@@ -13,23 +13,23 @@ const Menu = () => {
             شوینده ها
             <MdKeyboardArrowDown size={"18px"} />
           </a>
-          <ul className="absolute hidden flex-col gap-4 p-5 w-60 rounded-md mt-4 group-hover:flex trans shadow-lg">
-            <li className="py-2 border-b border-dotted border-gray-200 text-gray-700 hover:text-pink-600 trans">
+          <ul className="absolute hidden flex-col gap-4 p-5 w-60 rounded-md mt-4 group-hover:flex trans shadow-lg z-50 bg-white">
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
               <a href="#">شامپو</a>
             </li>
-            <li className="py-2 border-b border-dotted border-gray-200 text-gray-700 hover:text-pink-600 trans">
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
               <a href="#">فیس واش</a>
             </li>
-            <li className="py-2 border-b border-dotted border-gray-200 text-gray-700 hover:text-pink-600 trans">
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
               <a href="#">میسلار واتر</a>
             </li>
-            <li className="py-2 border-b border-dotted border-gray-200 text-gray-700 hover:text-pink-600 trans">
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
               <a href="#">شامپو بدن</a>
             </li>
-            <li className="py-2 border-b border-dotted border-gray-200 text-gray-700 hover:text-pink-600 trans">
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
               <a href="#">صابون</a>
             </li>
-            <li className="py-2 border-b border-dotted border-gray-200 text-gray-700 hover:text-pink-600 trans">
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
               <a href="#">نرم کننده مو</a>
             </li>
           </ul>
@@ -39,7 +39,7 @@ const Menu = () => {
             آرایشی
             <MdKeyboardArrowDown size={"18px"} />
           </a>
-          <div className="hidden group-hover:flex gap-4 absolute shadow-lg mt-4 w-[1000px] p-5 rounded-md">
+          <div className="hidden group-hover:flex gap-4 absolute shadow-lg mt-4 w-[1000px] p-5 rounded-md z-50 bg-white">
             <ul className=" flex-col gap-4  py-2 px-3 w-60 rounded-md flex trans">
               <span className="font-bold text-xl">رژ لب</span>
               <li className="py-2 border-b border-dotted border-gray-200 text-gray-700 hover:text-pink-600 trans">
