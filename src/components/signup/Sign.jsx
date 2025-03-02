@@ -19,7 +19,7 @@ const Sign = () => {
   
   return (
     <>
-        {showpopup && <section className="absolute top-0 left-1/2 -translate-x-1/2 translate-y-1/2 flex flex-col items-center font-primary z-50 w-[500px]">
+        {showpopup && <section className="absolute top-0 left-1/2 -translate-x-1/2 translate-y-1/2 flex flex-col items-center font-primary z-50 w-[500px] trans">
       <div className="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0 relative backdrop-blur-3xl">
         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
           <div className="btns m-auto flex justify-center items-center gap-2 font-bold">
