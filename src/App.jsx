@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import About from './pages/about/About.jsx'
 import Header from './components/header/Header.jsx';
 import Home from './pages/home/Home.jsx';
+import Footer from './components/footer/Footer.jsx';
 function App() {
   useEffect(()=>{
     AOS.init()
@@ -18,6 +19,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
       </Routes>
+      <Footer/>
     </>
   )
 }
