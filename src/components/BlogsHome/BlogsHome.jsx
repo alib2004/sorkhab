@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css/pagination";
-import "./BlogsHome.css";
 import { useState,useEffect } from "react";
 const BlogsHome = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);

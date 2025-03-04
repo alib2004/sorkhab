@@ -1,4 +1,3 @@
-import "./TopSales.css";
 import "swiper/css";
 import { FaStar } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
