@@ -1,7 +1,6 @@
 import TopAllPages from "../../components/topAllPages/TopAllPages";
 import BreadCrunb from "../../components/breadcrumb/BreadCrunb";
 import { Link } from "react-router-dom";
-
 const NotFound = () => {
   return (
     <div className="bg-white">

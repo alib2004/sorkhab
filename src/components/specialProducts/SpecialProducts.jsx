@@ -17,6 +17,7 @@ const SpecialProducts = () => {
         }}
         spaceBetween={30}
         className="mySwiper mt-8"
+         data-aos="zoom-in"
       >
         <SwiperSlide className='border-2 border-gray-200 rounded-xl overflow-hidden shadow-xl flex flex-col group relative'>
             <img src="/imgs/prod1.jpg" alt="" className='!trans block opacity-100 group-hover:hidden  group-hover:opacity-0'/>

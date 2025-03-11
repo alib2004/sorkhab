@@ -4,7 +4,8 @@ const CategoryHome = () => {
   const [cat] = useState(category);
   return (
     <div className="categoryHome bg-gray-100 py-10">
-      <div className="container">
+      <div className="container"  data-aos="fade-up"
+     data-aos-anchor-placement="top-center" data-aos-duration="1000">
         <span className="special">منو</span>
         <span className="pt-4 text-4xl block font-bold">دسته بندی ها</span>
         <div className="grid grid-cols-2 lg:grid-cols-6 mt-5 gap-5">
