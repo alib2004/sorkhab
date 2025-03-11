@@ -1,4 +1,5 @@
 import { MdKeyboardArrowDown,MdKeyboardDoubleArrowLeft } from "react-icons/md";
+import { Link } from "react-router-dom";
 const Menu = () => {
   return (
     <>
@@ -123,6 +124,45 @@ const Menu = () => {
           <a href="#" className=" hover:text-pink-500 trans">
             گریم
           </a>
+        </li>
+        <li className="relative group py-5">
+          <a href="#" className=" hover:text-pink-500 trans flex items-center">
+            صفحات
+            <MdKeyboardArrowDown size={"18px"} />
+          </a>
+          <ul className="absolute hidden flex-col gap-4 p-5 w-60 rounded-md mt-4 group-hover:flex trans shadow-lg z-50 bg-white">
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans relative">
+              <Link to='/wishlist-empty'>علاقه مندی</Link>
+              <ul className="absolute hidden flex-col gap-4 p-5 w-60 rounded-md -top-5 -left-[16.2rem] group-hover:flex trans shadow-lg z-50 bg-white">
+              <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
+              <Link to='/soon'>بزودی</Link>
+            </li>
+              </ul>
+            </li>
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
+              <Link to='/soon'>بزودی</Link>
+            </li>
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
+              <Link to='/404'>404</Link>
+            </li>
+          </ul>
+        </li>
+        <li className="relative group py-5">
+          <a href="#" className=" hover:text-pink-500 trans flex items-center">
+            صفحات
+            <MdKeyboardArrowDown size={"18px"} />
+          </a>
+          <ul className="absolute hidden flex-col gap-4 p-5 w-60 rounded-md mt-4 group-hover:flex trans shadow-lg z-50 bg-white">
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
+              <Link to='/wishlist-empty'>علاقه مندی</Link>
+            </li>
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
+              <Link to='/soon'>بزودی</Link>
+            </li>
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
+              <Link to='/404'>404</Link>
+            </li>
+          </ul>
         </li>
         <li>
           <a href="#" className=" hover:text-pink-500 trans">

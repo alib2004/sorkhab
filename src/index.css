@@ -44,3 +44,6 @@
     @apply bg-pink-600 text-white py-2 px-4 rounded-xl inline-flex font-bold text-xl
   }
 }
+h1{
+  font-weight: bold;
+}
