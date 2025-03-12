@@ -162,6 +162,9 @@ const Menu = () => {
             <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
               <Link to='/404'>404</Link>
             </li>
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
+              <Link to='/my-account'>حساب کاربری</Link>
+            </li>
           </ul>
         </li>
         <li>

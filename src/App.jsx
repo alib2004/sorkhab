@@ -11,6 +11,7 @@ import WhishlistsEmpty from "./pages/wishlists/WishlistsEmpty.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import NotFound from "./pages/notFound/NotFound.jsx";
 import Soon from "./pages/soon/Soon.jsx";
+import Account from "./pages/account/Account.jsx";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -28,6 +29,8 @@ function App() {
         <Route path="/wishlist-empty" element={<WhishlistsEmpty />} />
         <Route path="/soon" element={<Soon />} />
         <Route path="/404" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
+        <Route path="/my-account/*" element={<Account />} />
       </Routes>
       {!specialLocation && <Footer />}
     </>
