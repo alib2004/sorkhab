@@ -4,7 +4,9 @@ import { Link, Route, Routes } from "react-router-dom";
 import Dashboard from "../../components/Account/Dashboard";
 import Tracking from "../../components/Account/Tracking";
 import Orders from "../../components/Account/Orders";
-
+import Downloads from "../../components/Account/Downloads";
+import Address from "../../components/Account/Address";
+import Accounts from "../../components/Account/Account";
 const Account = () => {
   return (
     <div className="bg-white">
@@ -49,6 +51,9 @@ const Account = () => {
                 <Route path="dashboard" element={<Dashboard />} />
                 <Route path="tracking" element={<Tracking />} />
                 <Route path="order" element={<Orders />} />
+                <Route path="downloads" element={<Downloads />} />
+                <Route path="address" element={<Address />} />
+                <Route path="account" element={<Accounts />} />
               </Routes>
             </div>
           </div>

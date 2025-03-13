@@ -12,6 +12,9 @@ import Footer from "./components/footer/Footer.jsx";
 import NotFound from "./pages/notFound/NotFound.jsx";
 import Soon from "./pages/soon/Soon.jsx";
 import Account from "./pages/account/Account.jsx";
+import CartEmpty from "./pages/cart/CartEmpty.jsx";
+import CompareEmpty from "./pages/compare/CompareEmpty.jsx";
+import Login from "./pages/login/Login.jsx";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -29,6 +32,9 @@ function App() {
         <Route path="/wishlist-empty" element={<WhishlistsEmpty />} />
         <Route path="/soon" element={<Soon />} />
         <Route path="/404" element={<NotFound />} />
+        <Route path="/cart-empty" element={<CartEmpty />} />
+        <Route path="/compare-empty" element={<CompareEmpty />} />
+        <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/my-account/*" element={<Account />} />
       </Routes>

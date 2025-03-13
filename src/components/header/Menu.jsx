@@ -154,7 +154,10 @@ const Menu = () => {
           </a>
           <ul className="absolute hidden flex-col gap-4 p-5 w-60 rounded-md mt-4 group-hover:flex trans shadow-lg z-50 bg-white">
             <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
-              <Link to='/wishlist-empty'>علاقه مندی</Link>
+              <Link to='/wishlist'>علاقه مندی</Link>
+            </li>
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
+              <Link to='/wishlist-empty'>علاقه مندی خالی</Link>
             </li>
             <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
               <Link to='/soon'>بزودی</Link>
@@ -164,6 +167,15 @@ const Menu = () => {
             </li>
             <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
               <Link to='/my-account'>حساب کاربری</Link>
+            </li>
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
+              <Link to='/cart-empty'>سبدخرید خالی</Link>
+            </li>
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
+              <Link to='/compare-empty'>مقایسه خالی</Link>
+            </li>
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
+              <Link to='/login'>ورود</Link>
             </li>
           </ul>
         </li>
