@@ -38,7 +38,7 @@ const Header = () => {
   }, []);
   return (
     <ThemeProvider.Provider value={{ showpopup, setShowpopup }}>
-      <header className="bg-primary font-primary">
+      <header className="bg-[#FCF5ED] font-primary">
         <div
           className={`container ${navMobileMneu ? "backdrop-blur-3xl" : ""}`}
         >

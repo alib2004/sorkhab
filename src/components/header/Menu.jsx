@@ -177,6 +177,12 @@ const Menu = () => {
             <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
               <Link to='/login'>ورود</Link>
             </li>
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
+              <Link to='/faq'>سوالات متداول</Link>
+            </li>
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
+              <Link to='/shop'>فروشگاه</Link>
+            </li>
           </ul>
         </li>
         <li>
