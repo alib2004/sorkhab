@@ -1,0 +1,22 @@
+.prod-stock::after{
+    position: absolute;
+    content: '';
+    background-color: white;
+    width: 20px;
+    height: 10px;
+    right: -10px;
+    top: 12px;
+    transform: rotate(180deg);
+    border-radius: 10px;
+}
+.discount::after{
+    position: absolute;
+    content: '';
+    background-color: white;
+    width: 20px;
+    height: 10px;
+    right: -10px;
+    top: 12px;
+    transform: rotate(180deg);
+    border-radius: 10px;
+}

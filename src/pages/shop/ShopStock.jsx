@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { IoGrid } from "react-icons/io5";
 import { CiGrid2H } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
+import './ShopStock.css'
 const selectProducts = [
   { id: 1, title: "کرم ضد آفتاب", img: "/imgs/prod1.jpg" },
   { id: 2, title: "کرم ضد آفتاب", img: "/imgs/prod1.jpg" },
@@ -87,27 +88,21 @@ const selectsFilter = [
     ],
   },
 ];
-
-const Shop = () => {
+const ShopStock = () => {
   const [categoryFilter, setCategoryFilter] = useState(false);
   const [numprod, setNumprod] = useState(6);
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    console.log(numprod);
-    console.log(selectProducts.length);
-    console.log(products.length);
-    
-    
     setProducts(selectProducts.slice(0, numprod));
   }, [numprod, products.length]);
   return (
-      <div className="bg-white">
+    <div className="bg-white">
       <TopAllPages
         toptext={"خوش آمدید به وبسایت سرخاب"}
-        head1={"لیست کالاها"}
+        head1={"لیست کالاهای ناموجود"}
         desc={"کالای خود را انتخاب کنید"}
       />
-      <BreadCrunb title={"فروشگاه"} />
+      <BreadCrunb title={"محصولات ناموجود"} />
       <div className="container py-20">
         <div className="flex">
           <div className="w-[30%] bg-[#fcf5ed] p-6 rounded-md hidden md:block">
@@ -156,7 +151,9 @@ const Shop = () => {
           <div className="w-full md:w-[70%] p-6">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-2">
-                <span className="font-bold block md:hidden text-pink-600 border px-6 rounded-md py-2 border-pink-600 cursor-pointer hover:text-white hover:bg-pink-600 duration-300 transition">فیلتر</span>
+                <span className="font-bold block md:hidden text-pink-600 border px-6 rounded-md py-2 border-pink-600 cursor-pointer hover:text-white hover:bg-pink-600 duration-300 transition">
+                  فیلتر
+                </span>
                 <span className="font-bold hidden md:block">ترتیب نمایش :</span>
                 <select
                   name=""
@@ -179,7 +176,7 @@ const Shop = () => {
                   <option value="">24</option>
                   <option value="">36</option>
                 </select>
-                <IoGrid size={"25px"} className="hidden md:block"/>
+                <IoGrid size={"25px"} className="hidden md:block" />
                 <CiGrid2H size={"30px"} className="hidden md:block" />
               </div>
             </div>
@@ -188,7 +185,7 @@ const Shop = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
                   {products.map((prod) => (
                     <div
-                      className="border-2 bg-white border-gray-200 rounded-2xl overflow-hidden shadow-xl flex flex-col"
+                      className="border-2 bg-white border-gray-200 rounded-2xl overflow-hidden shadow-xl flex flex-col relative"
                       key={prod.id}
                     >
                       <img src={prod.img} alt="" className="" />
@@ -220,16 +217,21 @@ const Shop = () => {
                           مشاهده و خرید
                         </a>
                       </div>
+                      <div className="absolute bg-purple-700 top-3 right-3 text-white px-4 py-2  rounded-e-lg prod-stock">ناموجود</div>
                     </div>
                   ))}
                 </div>
               </div>
             </div>
-            {numprod < selectProducts.length ? 
-              <button type="button" className="block m-auto bg-pink-600 cursor-pointer px-6 py-2 rounded-xl mt-5 text-white" onClick={()=> setNumprod(numprod + 3)}>بیشتر</button>
-            : 
-              null
-            }
+            {numprod < selectProducts.length ? (
+              <button
+                type="button"
+                className="block m-auto bg-pink-600 cursor-pointer px-6 py-2 rounded-xl mt-5 text-white"
+                onClick={() => setNumprod(numprod + 3)}
+              >
+                بیشتر
+              </button>
+            ) : null}
           </div>
         </div>
       </div>
@@ -237,4 +239,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default ShopStock;

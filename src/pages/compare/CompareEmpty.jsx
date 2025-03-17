@@ -10,7 +10,7 @@ const CompareEmpty = () => {
           head1={"مقایسه - خالی"}
           desc={""}
         />
-        <BreadCrunb title="سبدخرید خالی" />
+        <BreadCrunb title="مقایسه خالی" />
         <div className="container">
           <div className="flex flex-col gap-5 py-20 justify-center items-center">
             <GiScales size={"80px"} color="#666" />
