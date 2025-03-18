@@ -13,13 +13,11 @@ import NotFound from "./pages/notFound/NotFound.jsx";
 import Soon from "./pages/soon/Soon.jsx";
 import Account from "./pages/account/Account.jsx";
 import CartEmpty from "./pages/cart/CartEmpty.jsx";
-import CompareEmpty from "./pages/compare/CompareEmpty.jsx";
 import Login from "./pages/login/Login.jsx";
 import Faq from "./pages/faq/Faq.jsx";
 import Shop from "./pages/shop/Shop.jsx";
 import ShopStock from "./pages/shop/ShopStock.jsx";
 import Discount from "./pages/shop/Discount.jsx";
-import Compare from "./pages/compare/Compare.jsx";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -38,7 +36,6 @@ function App() {
         <Route path="/soon" element={<Soon />} />
         <Route path="/404" element={<NotFound />} />
         <Route path="/cart-empty" element={<CartEmpty />} />
-        <Route path="/compare-empty" element={<CompareEmpty />} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/my-account/*" element={<Account />} />
@@ -46,7 +43,6 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/shop-stock" element={<ShopStock />} />
         <Route path="/discount" element={<Discount />} />
-        <Route path="/compare" element={<Compare />} />
       </Routes>
       {!specialLocation && <Footer />}
     </>
