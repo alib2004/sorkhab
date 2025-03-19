@@ -18,6 +18,7 @@ import Faq from "./pages/faq/Faq.jsx";
 import Shop from "./pages/shop/Shop.jsx";
 import ShopStock from "./pages/shop/ShopStock.jsx";
 import Discount from "./pages/shop/Discount.jsx";
+import Cart from "./pages/cart/Cart.jsx";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -36,6 +37,7 @@ function App() {
         <Route path="/soon" element={<Soon />} />
         <Route path="/404" element={<NotFound />} />
         <Route path="/cart-empty" element={<CartEmpty />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/my-account/*" element={<Account />} />
