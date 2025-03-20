@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 import BreadCrunb from "../../components/breadcrumb/BreadCrunb";
 import { MdKeyboardArrowLeft } from "react-icons/md";
