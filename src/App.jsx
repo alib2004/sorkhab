@@ -19,6 +19,7 @@ import Shop from "./pages/shop/Shop.jsx";
 import ShopStock from "./pages/shop/ShopStock.jsx";
 import Discount from "./pages/shop/Discount.jsx";
 import Cart from "./pages/cart/Cart.jsx";
+import Checkout from "./pages/checkout/Checkout.jsx";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -45,6 +46,7 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/shop-stock" element={<ShopStock />} />
         <Route path="/discount" element={<Discount />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
       {!specialLocation && <Footer />}
     </>
