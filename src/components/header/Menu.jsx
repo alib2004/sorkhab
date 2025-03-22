@@ -190,6 +190,9 @@ const Menu = () => {
             <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
               <Link to='/cart'>سبد خرید</Link>
             </li>
+            <li className="py-2 border-b border-dotted border-gray-300 text-gray-700 hover:text-pink-600 trans">
+              <Link to='/checkout'>صورت حساب</Link>
+            </li>
           </ul>
         </li>
         <li>
