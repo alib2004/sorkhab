@@ -63,7 +63,7 @@ const Slider1 = () => {
         clickable: true,
       }}
       modules={[ Navigation, Pagination, Autoplay]}
-      className=" font-primary  lg:!hidden mySwiper !p-5 !rounded-2xl bg-white"
+      className=" font-primary  lg:!hidden mySwiper !p-5 !rounded-2xl bg-white z-0"
     >
       <SwiperSlide className="overflow-auto">
         <img src="/imgs/slider-m1.jpg" className="rounded-2xl" />

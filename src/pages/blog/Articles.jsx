@@ -1,7 +1,6 @@
 import BreadCrunb from "../../components/breadcrumb/BreadCrunb";
 import { Link } from "react-router-dom";
 import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
-import { MdKeyboardArrowRight } from "react-icons/md";
 
 const blogs = [
   {

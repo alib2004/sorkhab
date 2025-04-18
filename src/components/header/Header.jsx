@@ -178,18 +178,11 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <AnimatePresence>
           {navMobileMneu && (
-            <motion.div
-              initial={{ opacity: 0, scale: 1, y: 0 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              className=" bg-white rounded-lg shadow-lg"
-            >
+            
               <div
                 ref={menuRef}
-                className="mobilenav w-[60%] bg-[#1d2236] absolute right-0 top-0 h-[100vh] trans text-white py-5"
+                className=" z-10 mobilenav w-[60%] bg-[#1d2236] absolute right-0 top-0 h-[100vh] trans text-white py-5"
                 data-aos="fade-left"
                 data-aos-duration="500"
               >
@@ -374,9 +367,7 @@ const Header = () => {
                   </li>
                 </ul>
               </div>
-            </motion.div>
           )}
-        </AnimatePresence>
       </header>
       <Sign />
     </ThemeProvider.Provider>
