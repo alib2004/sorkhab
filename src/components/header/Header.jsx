@@ -1,8 +1,6 @@
 import { IoIosArrowDown, IoIosHeartEmpty } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCartOutline, IoSearch } from "react-icons/io5";
-import { MdKeyboardArrowLeft } from "react-icons/md";
-import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { MdOutlinePhoneEnabled } from "react-icons/md";
@@ -11,17 +9,9 @@ import { LuBadgePercent } from "react-icons/lu";
 import Sign from "../signup/Sign";
 import { ThemeProvider } from "../../Context";
 import Menu from "./Menu";
-const mobbtnnav = (e) => {
-  let nextElem = e.target.parentElement.nextElementSibling;
-  e.target.classList.toggle("-rotate-90");
-  nextElem.classList.toggle("flex");
-  nextElem.classList.toggle("hidden");
-  nextElem.classList.toggle("flex-col");
-};
 const Header = () => {
   const [navMobileMneu, setNavMobileMneu] = useState(false);
   const [showpopup, setShowpopup] = useState(false);
-
   const menuRef = useRef();
   useEffect(() => {
     function handleClickOutside(event) {
@@ -170,204 +160,67 @@ const Header = () => {
         <div className="container hidden md:block">
           <div className="flex justify-between items-center">
             <div className="menu-right">
-              <Menu/>
+              <Menu />
             </div>
             <div className="menu-left flex items-center gap-2">
-              <LuBadgePercent size={'25px'}/>
+              <LuBadgePercent size={"25px"} />
               <span>پیشنهاد ویژه</span>
             </div>
           </div>
         </div>
-          {navMobileMneu && (
-            
-              <div
-                ref={menuRef}
-                className=" z-10 mobilenav w-[60%] bg-[#1d2236] absolute right-0 top-0 h-[100vh] trans text-white py-5"
-                data-aos="fade-left"
-                data-aos-duration="500"
+        {navMobileMneu && (
+          <div
+            ref={menuRef}
+            className=" z-10 mobilenav w-[60%] bg-[#1d2236] absolute right-0 top-0 h-[100vh] trans text-white py-5"
+            data-aos="fade-left"
+            data-aos-duration="500"
+          >
+            <form
+              action=""
+              className="flex items-center justify-center rounded-md"
+            >
+              <input
+                type="text"
+                name=""
+                id=""
+                className="bg-white py-1 px-2 overflow-hidden rounded-r-md placeholder:text-black placeholder:font-extralight"
+                placeholder="جستجو"
+              />
+              <button
+                type="button"
+                className="bg-pink-700 py-1.5 px-3 rounded-l-md"
               >
-                <form
-                  action=""
-                  className="flex items-center justify-center rounded-md"
-                >
-                  <input
-                    type="text"
-                    name=""
-                    id=""
-                    className="bg-white py-1 px-2 overflow-hidden rounded-r-md placeholder:text-black placeholder:font-extralight"
-                    placeholder="جستجو"
-                  />
-                  <button
-                    type="button"
-                    className="bg-pink-700 py-1.5 px-3 rounded-l-md"
-                  >
-                    <IoSearch size={"20px"} />
-                  </button>
-                </form>
-                <ul className="p-9 flex flex-col gap-5">
-                  <li className="border-b pb-2 border-gray-500 font-medium text-sm">
-                    <a href="#">صفحه اصلی</a>
-                  </li>
-                  <li className="border-b pb-2 border-gray-500 font-medium text-sm">
-                    <a href="#" className=" flex justify-between items-center">
-                      پوستی
-                      <MdKeyboardArrowLeft
-                        size={"20px"}
-                        color="#fcfcfc"
-                        className="cursor-pointer trans"
-                        onClick={(e) => mobbtnnav(e)}
-                      />
-                    </a>
-                    <ul className="hidden">
-                      <li className="border-b border-gray-500 font-medium text-sm">
-                        <a
-                          href="#"
-                          className=" flex justify-between items-center pr-2 py-4"
-                        >
-                          رژ لب
-                          <MdKeyboardArrowLeft
-                            size={"20px"}
-                            color="#fcfcfc"
-                            className="cursor-pointer"
-                          />
-                        </a>
-                      </li>
-                      <li className="border-b border-gray-500 font-medium text-sm">
-                        <a
-                          href="#"
-                          className=" flex justify-between items-center pr-2 py-4"
-                        >
-                          رژ گونه
-                          <MdKeyboardArrowLeft
-                            size={"20px"}
-                            color="#fcfcfc"
-                            className="cursor-pointer"
-                          />
-                        </a>
-                      </li>
-                      <li className="border-b border-gray-500 font-medium text-sm">
-                        <a
-                          href="#"
-                          className=" flex justify-between items-center pr-2 py-4"
-                        >
-                          کانتور
-                          <MdKeyboardArrowLeft
-                            size={"20px"}
-                            color="#fcfcfc"
-                            className="cursor-pointer"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="border-b pb-2 border-gray-500 font-medium text-sm">
-                    <a href="#" className=" flex justify-between items-center">
-                      بهداشتی
-                      <MdKeyboardArrowLeft
-                        size={"20px"}
-                        color="#fcfcfc"
-                        className="cursor-pointer trans"
-                        onClick={(e) => mobbtnnav(e)}
-                      />
-                    </a>
-                    <ul className="hidden">
-                      <li className="border-b border-gray-500 font-medium text-sm">
-                        <a
-                          href="#"
-                          className=" flex justify-between items-center pr-2 py-4"
-                        >
-                          کرم پودر
-                          <MdKeyboardArrowLeft
-                            size={"20px"}
-                            color="#fcfcfc"
-                            className="cursor-pointer"
-                          />
-                        </a>
-                      </li>
-                      <li className="border-b border-gray-500 font-medium text-sm">
-                        <a
-                          href="#"
-                          className=" flex justify-between items-center pr-2 py-4"
-                        >
-                          پنکیک
-                          <MdKeyboardArrowLeft
-                            size={"20px"}
-                            color="#fcfcfc"
-                            className="cursor-pointer"
-                          />
-                        </a>
-                      </li>
-                      <li className="border-b border-gray-500 font-medium text-sm">
-                        <a
-                          href="#"
-                          className=" flex justify-between items-center pr-2 py-4"
-                        >
-                          سایه چشم
-                          <MdKeyboardArrowLeft
-                            size={"20px"}
-                            color="#fcfcfc"
-                            className="cursor-pointer"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="border-b pb-2 border-gray-500 font-medium text-sm">
-                    <a href="#" className=" flex justify-between items-center">
-                      صفحات
-                      <MdKeyboardArrowLeft
-                        size={"20px"}
-                        color="#fcfcfc"
-                        className="cursor-pointer trans"
-                        onClick={(e) => mobbtnnav(e)}
-                      />
-                    </a>
-                    <ul className="hidden">
-                      <li className="border-b border-gray-500 font-medium text-sm">
-                        <a
-                          href="#"
-                          className=" flex justify-between items-center pr-2 py-4"
-                        >
-                          درباره ما
-                        </a>
-                      </li>
-                      <li className="border-b border-gray-500 font-medium text-sm">
-                        <a
-                          href="#"
-                          className=" flex justify-between items-center pr-2 py-4"
-                        >
-                          تماس با ما
-                        </a>
-                      </li>
-                      <li className="border-b border-gray-500 font-medium text-sm">
-                        <a
-                          href="#"
-                          className=" flex justify-between items-center pr-2 py-4"
-                        >
-                          حساب کاربری
-                        </a>
-                      </li>
-                      <li className="border-b border-gray-500 font-medium text-sm">
-                        <a
-                          href="#"
-                          className=" flex justify-between items-center pr-2 py-4"
-                        >
-                          علاقه مندی
-                        </a>
-                      </li>
-                      <li className="border-b border-gray-500 font-medium text-sm">
-                        <a
-                          href="#"
-                          className=" flex justify-between items-center pr-2 py-4"
-                        >
-                          سوالات متداول
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-          )}
+                <IoSearch size={"20px"} />
+              </button>
+            </form>
+            <ul className="p-9 flex flex-col gap-5">
+              <li className="border-b pb-2 border-gray-500 font-medium text-sm">
+                <a href="#">صفحه اصلی</a>
+              </li>
+              <li className="border-b pb-2 border-gray-500 font-medium text-sm">
+                <a href="#">شوینده</a>
+              </li>
+              <li className="border-b pb-2 border-gray-500 font-medium text-sm">
+                <a href="#">آرایشی</a>
+              </li>
+              <li className="border-b pb-2 border-gray-500 font-medium text-sm">
+                <a href="#">بهداشتی</a>
+              </li>
+              <li className="border-b pb-2 border-gray-500 font-medium text-sm">
+                <a href="#">گریم</a>
+              </li>
+              <li className="border-b pb-2 border-gray-500 font-medium text-sm">
+                <a href="#">صفحات</a>
+              </li>
+              <li className="border-b pb-2 border-gray-500 font-medium text-sm">
+                <a href="#">درباره ما</a>
+              </li>
+              <li className="border-b pb-2 border-gray-500 font-medium text-sm">
+                <a href="#">تماس با ما</a>
+              </li>
+            </ul>
+          </div>
+        )}
       </header>
       <Sign />
     </ThemeProvider.Provider>
