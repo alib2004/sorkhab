@@ -3,8 +3,6 @@ import { useState } from "react";
 import { products } from "../../products";
 import { Link } from "react-router-dom";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
-console.log(products.filter((prod) => prod.discountPrice).slice(3, 15));
-
 const tabs = [
   {
     id: "popular",
